@@ -1,0 +1,37 @@
+.header{
+    top: 0;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3vw;
+    background-color: rgb(63, 63, 63);
+    min-height: 8vh;
+    >.logo{
+        font-size: 1.5rem;
+        color:white;
+    };
+    >.link{
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+        >a{
+            font-size: 1.3rem;
+            color: rgb(255, 255, 255);
+            &:hover{
+                color: rgb(234, 215, 13);
+            }
+        }
+        .toCart{
+            >p{
+                font-size: 15px;
+                position: absolute;
+                background-color: rgb(253, 253, 253);
+                font-weight: bold;
+                border-radius: 50%;
+                color: rgb(0, 0, 0);
+                transform: translate(17px,-13px);
+            }
+        }
+    }    
+}

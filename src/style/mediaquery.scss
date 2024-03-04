@@ -1,0 +1,93 @@
+@media screen and (max-width:750px){
+    .header{
+        padding-right: 8vw;
+        >.link{
+            gap:6vw
+        }
+    }
+    .cart{
+        background-color: antiquewhite;
+        display: grid;
+        grid-template-columns: 1fr;
+        >.cartItems{   
+            height: 68vh;
+            >h1{
+                position: absolute;
+                margin: 60% 0;
+                text-align: center;
+                width: 100%;
+            }
+            >.item{
+                background-color: white;
+                border-radius: 20px;
+                box-shadow: 0px 0 10px #676767;
+                width: 100%;            
+                margin: 20px 0;
+                display: grid;
+                padding: 20px;
+                grid-template-columns: 1fr 4fr 1fr 1fr;
+                >img{
+                    width: 100px;
+                    height: 100px;
+                    object-fit: contain;
+                }
+                >div{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    p{
+                        font-weight: bold;
+                        &:nth-child(1){
+                            letter-spacing: 1px;
+                            font-size: 1.2rem;                        
+                        }
+                        &:nth-child(2){
+                            color: rgb(203, 24, 24);
+                        }
+                    }
+                }
+                >section{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    button{
+                        height: 25px;
+                        width:25px;
+                    }
+                    p{
+                        font-size: 30px;
+                    }
+                }  
+                >svg{
+                    margin: auto;
+                    &:hover{
+                        color:rgb(200, 40, 40)
+                    }
+                }          
+            }
+        }
+        >aside{
+            border-radius: 0px;
+            box-shadow: -10px 0 10px #676767;
+            padding: 20px;
+            height: auto;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            >div{
+                display: flex;
+                flex-direction: column;
+                gap: 30px;
+                >p{
+                    font-size: 1.2rem;
+                    &:nth-child(4){
+                        color: rgb(116, 3, 3);
+                        font-weight: bold;
+                    }
+                }
+                
+            }
+        }
+    }
+}
